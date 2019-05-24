@@ -1,7 +1,8 @@
 class Libparc < Formula
   desc "Libparc library"
   homepage "https://github.com/FDio/cicn/blob/cframework/master/libparc/README.md"
-  url "https://github.com/FDio/cicn/archive/cframework/master.zip"
+  url "https://github.com/FDio/cicn", :using=>:git, :branch=>"cframework/master"
+#@archive/cframework/master.zip"
   version "1.0"
   sha256 ""
   depends_on "cmake" => :build
