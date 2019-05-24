@@ -3,7 +3,7 @@ class Libparc < Formula
   homepage "https://github.com/FDio/cicn/blob/cframework/master/libparc/README.md"
   url "https://github.com/FDio/cicn", :using=>:git, :branch=>"cframework/master"
 #@archive/cframework/master.zip"
-  version "1.0-65~g7944543~b2"
+  version "1.0-65~g7944543~b3"
   
   depends_on "cmake" => :build
   depends_on "openssl@1.1"
