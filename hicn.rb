@@ -2,8 +2,8 @@ class Hicn < Formula
   desc "Hicn stack"
   homepage "https://wiki.fd.io/view/HICN"
   url "https://github.com/FDio/hicn", :using=>:git, :branch=>"master"
-  version "19.04-40-g052cc4a"
-  sha256 "26d720581896fb1a00cebfc2b442e4c5c5d7b7acd93f5d2c6c181222ff9bdc71"
+  version "19.04-42-gcb549ca"
+  sha256 "909b9905d7dc0e09a3ca577529d299e5fc72fdf098bd9f87d220c00aae68df13"
   depends_on "cmake" => :build
   depends_on "libparc"
   depends_on "curl"
