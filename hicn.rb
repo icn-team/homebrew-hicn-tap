@@ -2,7 +2,7 @@ class Hicn < Formula
   desc "Hicn stack"
   homepage "https://wiki.fd.io/view/HICN"
   url "https://github.com/FDio/hicn", :using=>:git, :branch=>"master"
-  version "19.04-42-gcb549ca"
+  version "19.04-46-ge7149a6"
   
   depends_on "cmake" => :build
   depends_on "libparc"
