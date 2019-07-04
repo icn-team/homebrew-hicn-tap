@@ -6,7 +6,6 @@ class Hicn < Formula
 
   depends_on "cmake" => :build
   depends_on "asio"
-  depends_on "curl"
   depends_on "libparc"
 
   def install
