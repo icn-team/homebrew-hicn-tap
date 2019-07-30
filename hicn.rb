@@ -7,6 +7,7 @@ class Hicn < Formula
   depends_on "cmake" => :build
   depends_on "asio"
   depends_on "libparc"
+  depends_on "libconfig"
 
   def install
     system "cmake", ".", "-DBUILD_APPS=ON", *std_cmake_args
