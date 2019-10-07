@@ -10,7 +10,7 @@ class Hicn < Formula
   depends_on "libconfig"
 
   def install
-    system "cmake", ".", "-DBUILD_APPS=ON -DBUILD_CTRL=OFF", *std_cmake_args
+    system "cmake", ".", "-DBUILD_APPS=ON", *std_cmake_args
     system "make", "install"
   end
 
