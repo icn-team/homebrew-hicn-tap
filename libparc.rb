@@ -2,7 +2,7 @@ class Libparc < Formula
     desc "This library is part of hICN stack"
     homepage "https://github.com/FDio/cicn/blob/cframework/master/libparc/README.md"
     url "https://github.com/FDio/cicn", :using=>:git, :branch=>"cframework/master"
-    version "1.0-69~g8921515"
+    version "1.0-70~g7cde1ae"
     
     depends_on "cmake" => :build
     depends_on "libevent"
