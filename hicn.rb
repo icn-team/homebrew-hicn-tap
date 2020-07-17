@@ -2,7 +2,7 @@ class Hicn < Formula
   desc "This formula contains the libs and the apps of hICN stack"
   homepage "https://wiki.fd.io/view/HICN"
   url "https://github.com/FDio/hicn", :using=>:git, :branch=>"master"
-  version "20.05-20-g90cb799"
+  version "20.05-21-g5792a7d"
 
   depends_on "cmake" => :build
   depends_on "asio"
