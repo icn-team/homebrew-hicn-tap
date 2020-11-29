@@ -11,7 +11,7 @@ class Hicn < Formula
 
   def install
     system "cmake", ".", "-DBUILD_APPS=ON", "-DOPENSSL_ROOT_DIR=/usr/local/opt/openssl@1.1", *std_cmake_args
-    system "make", "install"
+    system "make", "-j8", "install"
   end
 
   test do
