@@ -10,7 +10,7 @@ class Hicn < Formula
   depends_on "libconfig"
 
   def install
-    system "cmake", ".", "-DBUILD_APPS=ON", *std_cmake_args
+    system "cmake", ".", "-DBUILD_APPS=ON", "-DOPENSSL_ROOT_DIR=/usr/local/opt/openssl@1.1", *std_cmake_args
     system "make", "install"
   end
 
