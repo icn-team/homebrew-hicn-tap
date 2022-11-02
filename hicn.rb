@@ -12,6 +12,6 @@ class Hicn < Formula
   depends_on "libconfig"
 
   def install
-    bin.install "hicn"
+    bin.install "macos"
   end
 end
