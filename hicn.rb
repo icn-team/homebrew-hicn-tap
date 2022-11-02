@@ -5,9 +5,10 @@ class Hicn < Formula
   version "v0.0.6"
   sha256 "8739c76e681f900923b900c9df0ef75cf421d39cabb54650c4b9ad19b6a76d85"
 
-  depends_on "cmake" => :build
+#   depends_on "cmake" => :build
+  depends_on "openssl@1.1"
+  depends_on "libevent"
   depends_on "asio"
-  depends_on "libparc"
   depends_on "libconfig"
 
   def install
