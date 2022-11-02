@@ -2,8 +2,8 @@ class Hicn < Formula
   desc "This formula contains the libs and the apps of hICN stack"
   homepage "https://wiki.fd.io/view/HICN"
   url "https://github.com/manang/hicn-sdk/releases/download/v0.0.1/binaries.zip"
-  version "v0.0.0"
-  sha256 "f2ce1e989b272cfcb677616763e0a2e7ec659effa67a88aa92b3a65528f60a3c"
+  version "v0.0.1"
+  sha256 "8739c76e681f900923b900c9df0ef75cf421d39cabb54650c4b9ad19b6a76d85"
 
   depends_on "cmake" => :build
   depends_on "asio"
