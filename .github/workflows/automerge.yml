@@ -19,10 +19,18 @@ on:
   status: {}
 jobs:
   automerge:
+    permissions:
+      contents: read
+      pull-requests: write
     runs-on: ubuntu-latest
     steps:
-      - id: automerge
-        name: automerge
-        uses: "pascalgn/automerge-action@v0.15.5"
-        env:
-          GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
+    - id: label
+      name: label
+      uses: actions/labeler@v4
+      with:
+        repo-token: "${{ secrets.GITHUB_TOKEN }}"
+    - id: automerge
+      name: automerge
+      uses: "pascalgn/automerge-action@v0.15.5"
+      env:
+        GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
