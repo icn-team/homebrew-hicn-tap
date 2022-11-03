@@ -9,6 +9,10 @@ class Hicn < Formula
   depends_on "libevent"
   depends_on "asio"
   depends_on "libconfig"
+  arch = `uname -m`
+  if !arch.chop.eql?("x86_64")
+   raise StandardError.new "Wrong architecture!"
+  end
 
   def install
     lib.install Dir['usr/lib/*']
