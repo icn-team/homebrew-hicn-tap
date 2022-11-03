@@ -12,6 +12,6 @@ class Hicn < Formula
   depends_on "libconfig"
 
   def install
-    bin.install "usr"
+    bin.install "usr/bin"
   end
 end
